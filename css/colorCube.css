@@ -4,6 +4,9 @@
 }
 .myCanvas {
 	margin-right: 50px;
+	width: 100%;
+	max-width: 500px;
+	height: auto;
 }
 .formWrapper {
 	margin-top: 25px;
