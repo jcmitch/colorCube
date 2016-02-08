@@ -1,32 +1,32 @@
 .myCanvas,
 .formWrapper {
-	display: inline-block;
+    display: inline-block;
 }
 .myCanvas {
-	margin-right: 50px;
-	width: 100%;
-	max-width: 500px;
-	height: auto;
+    margin-right: 50px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
 .formWrapper {
-	margin-top: 25px;
-	vertical-align: top;
+    margin-top: 25px;
+    vertical-align: top;
 }
 .title {
-	text-align: center;
+    text-align: center;
 }
 .iptWpr {
-	margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 .iptLbl {
-	display: inline-block;
-	width: 50px;
+    display: inline-block;
+    width: 50px;
 }
 form {
-	display: inline-block;
+    display: inline-block;
 }
 .colorSquare {
-	height: 70px;
+    height: 70px;
     width: 70px;
     border: 1px solid #000;
     display: inline-block;
