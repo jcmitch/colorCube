@@ -1,0 +1,32 @@
+.myCanvas,
+.formWrapper {
+	display: inline-block;
+}
+.myCanvas {
+	margin-right: 50px;
+}
+.formWrapper {
+	margin-top: 25px;
+	vertical-align: top;
+}
+.title {
+	text-align: center;
+}
+.iptWpr {
+	margin-bottom: 5px;
+}
+.iptLbl {
+	display: inline-block;
+	width: 50px;
+}
+form {
+	display: inline-block;
+}
+.colorSquare {
+	height: 70px;
+    width: 70px;
+    border: 1px solid #000;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: inherit;
+}
