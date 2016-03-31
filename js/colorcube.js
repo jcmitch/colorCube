@@ -12,42 +12,42 @@ $(document).ready(function(){
         this.z = z;
 
         this.rotateX = function(angle) {
-            var rad, cosa, sina, y, z
-            rad = angle * Math.PI / 180
-            cosa = Math.cos(rad)
-            sina = Math.sin(rad)
-            y = this.y * cosa - this.z * sina
-            z = this.y * sina + this.z * cosa
-            return new Point3D(this.x, y, z)
-        }
+            var rad, cosa, sina, y, z;
+            rad = angle * Math.PI / 180;
+            cosa = Math.cos(rad);
+            sina = Math.sin(rad);
+            y = this.y * cosa - this.z * sina;
+            z = this.y * sina + this.z * cosa;
+            return new Point3D(this.x, y, z);
+        };
 
         this.rotateY = function(angle) {
-            var rad, cosa, sina, x, z
-            rad = angle * Math.PI / 180
-            cosa = Math.cos(rad)
-            sina = Math.sin(rad)
-            z = this.z * cosa - this.x * sina
-            x = this.z * sina + this.x * cosa
-            return new Point3D(x,this.y, z)
-        }
+            var rad, cosa, sina, x, z;
+            rad = angle * Math.PI / 180;
+            cosa = Math.cos(rad);
+            sina = Math.sin(rad);
+            z = this.z * cosa - this.x * sina;
+            x = this.z * sina + this.x * cosa;
+            return new Point3D(x,this.y, z);
+        };
 
         this.rotateZ = function(angle) {
-            var rad, cosa, sina, x, y
-            rad = angle * Math.PI / 180
-            cosa = Math.cos(rad)
-            sina = Math.sin(rad)
-            x = this.x * cosa - this.y * sina
-            y = this.x * sina + this.y * cosa
-            return new Point3D(x, y, this.z)
-        }
+            var rad, cosa, sina, x, y;
+            rad = angle * Math.PI / 180;
+            cosa = Math.cos(rad);
+            sina = Math.sin(rad);
+            x = this.x * cosa - this.y * sina;
+            y = this.x * sina + this.y * cosa;
+            return new Point3D(x, y, this.z);
+        };
 
         this.project = function(viewWidth, viewHeight, fov, viewDistance) {
-            var factor, x, y
-            factor = fov / (viewDistance + this.z)
-            x = this.x * factor + viewWidth / 2
-            y = this.y * factor + viewHeight / 2
-            return new Point3D(x, y, this.z)
-        }
+            var factor, x, y;
+            factor = fov / (viewDistance + this.z);
+            x = this.x * factor + viewWidth / 2;
+            y = this.y * factor + viewHeight / 2;
+            return new Point3D(x, y, this.z);
+        };
     }
 
     function createColorPoint() {
